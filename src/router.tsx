@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
 
 /* ─── Types ────────────────────────────────────────── */
-type Route = '/' | '/menu' | '/reservaciones' | '/reservar';
+export type Route = '/' | '/menu' | '/reservaciones' | '/reservar';
 
 interface RouterContextValue {
   path: Route;

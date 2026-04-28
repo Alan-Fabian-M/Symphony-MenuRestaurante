@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from '../../router';
+import type React from 'react';
+import { Link, type Route } from '../../router';
 import { UtensilsCrossed } from 'lucide-react';
 
 const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -26,10 +26,10 @@ const NAV_COLS = [
   {
     title: 'Navegar',
     links: [
-      { label: 'Inicio', to: '/' },
-      { label: 'Menú', to: '/menu' },
-      { label: 'Reservaciones', to: '/reservaciones' },
-      { label: 'Reservar Mesa', to: '/reservar' },
+      { label: 'Inicio', to: '/' as Route },
+      { label: 'Menú', to: '/menu' as Route },
+      { label: 'Reservaciones', to: '/reservaciones' as Route },
+      { label: 'Reservar Mesa', to: '/reservar' as Route },
     ],
   },
   {

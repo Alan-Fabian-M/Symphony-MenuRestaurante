@@ -1,6 +1,5 @@
 // MenuItemCard is no longer used — menu cards are implemented inline in pages/MenuPage.tsx
 // Kept as stub to avoid broken imports.
-import React from 'react';
 
 interface MenuItemCardProps {
   title: string;

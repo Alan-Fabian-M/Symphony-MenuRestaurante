@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useRouter } from '../../router';
 import { UtensilsCrossed, X, Menu } from 'lucide-react';
 
@@ -6,7 +6,7 @@ const NAV_LINKS = [
   { label: 'Inicio', to: '/' },
   { label: 'Menú', to: '/menu' },
   { label: 'Reservaciones', to: '/reservaciones' },
-];
+] as const;
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
